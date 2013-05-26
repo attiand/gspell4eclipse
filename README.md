@@ -1,7 +1,7 @@
 gspell4eclipse
 ==============
 
-Google one line spelling for Eclipse.
+Google online spelling for Eclipse.
 
 Uses <a href="http://code.google.com/p/google-api-spelling-java">Google online spelling API</a> to check for spelling
 errors in Eclipse editors.
@@ -13,7 +13,8 @@ Installation
 ------------
 
 Install from the update site: <code>http://raw.github.com/eplatti/gspell4eclipse/master/com.github.gspell4eclipse.site</code>.
-Select <code>Google Online Spelling Service</code> from Preferences, General -> Editors -> Text Editors -> Spelling.
+Select <code>Google Online Spelling Service</code> from Preferences, General -> Editors -> Text Editors -> Spelling. Select
+desired language.
 
 
 Versions
