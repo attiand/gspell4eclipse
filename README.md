@@ -13,10 +13,10 @@ Installation
 ------------
 
 Install from the update site: <code>http://raw.github.com/eplatti/gspell4eclipse/master/com.github.gspell4eclipse.site</code>.
-(this link won't work in a web browser)
+(this link won't work in a web browser).
+
 Select <code>Google Online Spelling Service</code> from Preferences, General -> Editors -> Text Editors -> Spelling. Select
 desired language.
-
 
 Versions
 --------
