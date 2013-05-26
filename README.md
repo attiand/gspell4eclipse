@@ -23,8 +23,14 @@ Versions
 
 * 1.0.0 First version.
 
+Requirements
+------------
 
-Se also
+* Eclipse 3.1 (Only tested on 4.2)
+
+* Java 1.7 
+
+See also
 ---------
 
 * <a href="http://code.google.com/p/hunspell4eclipse/">hunspell4eclipse</a>
