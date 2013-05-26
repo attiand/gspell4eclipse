@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GSpell Engine
+Bundle-SymbolicName: com.github.gspell4eclipse.engine;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.github.gspell4eclipse.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.workbench.texteditor,
+ org.junit;resolution:=optional
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Import-Package: org.eclipse.jface.text,
+ org.eclipse.jface.text.contentassist
+Bundle-ClassPath: lib/google-api-spelling-java-1.1.jar,
+ lib/log4j-1.2.14.jar,
+ .
+Export-Package: com.github.gspell4eclipse.engine
+Bundle-Vendor: Mattias Andersson

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="foo.spelling.region.selector">
+      <selector
+            class="com.github.gspell4eclipse.jdt.internal.JavaSource"
+            contentType="org.eclipse.jdt.core.javaSource">
+      </selector>
+   </extension>
+   <extension
+         point="foo.spelling.region.selector">
+      <selector
+            class="com.github.gspell4eclipse.jdt.internal.PropertySource"
+            contentType="org.eclipse.jdt.core.javaProperties">
+      </selector>
+   </extension>
+
+</plugin>

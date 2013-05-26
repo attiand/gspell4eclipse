@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="foo.spelling.region.selector" name="Spelling Region Selector" schema="schema/foo.spelling.region.selector.exsd"/>
+   <extension
+         point="org.eclipse.ui.workbench.texteditor.spellingEngine">
+      <engine
+            class="com.github.gspell4eclipse.engine.internal.GSpellingEngine"
+            id="foo.gspell.engine"
+            label="Google Online Spelling Service"
+            preferencesClass="com.github.gspell4eclipse.preferences.SpellingPreferenceBlock">
+      </engine>
+   </extension>
+   <extension
+         point="foo.spelling.region.selector">
+      <selector
+            class="com.github.gspell4eclipse.region.selectors.TextSpellingRegionSelector"
+            contentType="org.eclipse.core.runtime.text">
+      </selector>
+   </extension>
+
+</plugin>

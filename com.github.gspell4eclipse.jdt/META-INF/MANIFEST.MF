@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: JDT support for gspell4eclipse
+Bundle-SymbolicName: com.github.gspell4eclipse.jdt;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.github.gspell4eclipse.jdt.Activator
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.jdt.ui,
+ com.github.gspell4eclipse.engine;bundle-version="0.0.1"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Mattias Andersson

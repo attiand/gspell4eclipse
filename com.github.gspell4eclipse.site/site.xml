@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Google spelling for Eclipse">
+      Google spelling for Eclipse update site
+   </description>
+   <feature url="features/com.github.gspell4eclipse.feature_1.0.0.qualifier.jar" id="com.github.gspell4eclipse.feature" version="1.0.0.qualifier"/>
+   <feature url="features/com.github.gspell4eclipse.jdt.feature_1.0.0.qualifier.jar" id="com.github.gspell4eclipse.jdt.feature" version="1.0.0.qualifier"/>
+   <category-def name="spell" label="Google spell for Eclipse"/>
+</site>
