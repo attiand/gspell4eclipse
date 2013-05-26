@@ -10,8 +10,8 @@ editors. See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=407230">
 Installation 
 ------------
 
-Install from the <a href="https://github.com/eplatti/gspell4eclipse">Update site</a>.
-Select <code>Google Oneline Spelling Service</code> from Preferences, General -> Editors -> Text Editors -> Spelling.
+Install from the update site: <code>http://raw.github.com/eplatti/gspell4eclipse/master/com.github.gspell4eclipse.site</code>.
+Select <code>Google Online Spelling Service</code> from Preferences, General -> Editors -> Text Editors -> Spelling.
 
 
 Versions
