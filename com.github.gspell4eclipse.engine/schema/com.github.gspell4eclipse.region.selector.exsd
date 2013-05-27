@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Schema file written by PDE -->
-<schema targetNamespace="foo.gspell" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema targetNamespace="com.github.gspell4eclipse" xmlns="http://www.w3.org/2001/XMLSchema">
 <annotation>
       <appinfo>
-         <meta.schema plugin="foo.gspell" id="foo.spelling.region.selector" name="Spelling Region Selector"/>
+         <meta.schema plugin="com.github.gspell4eclipse" id="com.github.gspell4eclipse.region.selector" name="Spelling Region Selector"/>
       </appinfo>
       <documentation>
          Control which parts of a document that should be checked for spelling errors for a specific content type.
@@ -57,10 +57,10 @@
          <attribute name="class" type="string" use="required">
             <annotation>
                <documentation>
-                  Specify a class that should perform the selection, must implment &lt;code&gt;foo.gspell.engine.ISpellingRegionSelector&lt;/code&gt;.
+                  Specify a class that should perform the selection, must implment &lt;code&gt;com.github.gspell4eclipse.engine.ISpellingRegionSelector&lt;/code&gt;.
                </documentation>
                <appinfo>
-                  <meta.attribute kind="java" basedOn=":foo.gspell.engine.ISpellingRegionSelector"/>
+                  <meta.attribute kind="java" basedOn=":com.github.gspell4eclipse.engine.ISpellingRegionSelector"/>
                </appinfo>
             </annotation>
          </attribute>
@@ -79,7 +79,7 @@
          <meta.section type="since"/>
       </appinfo>
       <documentation>
-         [Enter the first release in which this extension point appears.]
+         1.0.0
       </documentation>
    </annotation>
 

@@ -7,7 +7,7 @@ Bundle-Activator: com.github.gspell4eclipse.jdt.Activator
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.jface.text,
  org.eclipse.jdt.ui,
- com.github.gspell4eclipse.engine;bundle-version="0.0.1"
+ com.github.gspell4eclipse.engine;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-ActivationPolicy: lazy
 Bundle-Vendor: Mattias Andersson

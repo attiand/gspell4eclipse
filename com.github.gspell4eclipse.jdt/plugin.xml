@@ -2,14 +2,14 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension
-         point="foo.spelling.region.selector">
+         point="com.github.gspell4eclipse.region.selector">
       <selector
             class="com.github.gspell4eclipse.jdt.internal.JavaSource"
             contentType="org.eclipse.jdt.core.javaSource">
       </selector>
    </extension>
    <extension
-         point="foo.spelling.region.selector">
+         point="com.github.gspell4eclipse.region.selector">
       <selector
             class="com.github.gspell4eclipse.jdt.internal.PropertySource"
             contentType="org.eclipse.jdt.core.javaProperties">

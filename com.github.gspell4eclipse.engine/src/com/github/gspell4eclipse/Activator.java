@@ -9,7 +9,7 @@ import org.osgi.framework.BundleContext;
 public class Activator extends AbstractUIPlugin {
 
 	// The plug-in ID
-	public static final String PLUGIN_ID = "foo.gspell"; //$NON-NLS-1$
+	public static final String PLUGIN_ID = "com.github.gspell4eclipse.engine"; //$NON-NLS-1$
 
 	// The shared instance
 	private static Activator plugin;

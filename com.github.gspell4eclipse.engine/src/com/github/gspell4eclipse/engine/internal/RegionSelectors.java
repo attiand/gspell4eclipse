@@ -14,8 +14,9 @@ import org.eclipse.ui.statushandlers.StatusManager;
 import com.github.gspell4eclipse.Activator;
 import com.github.gspell4eclipse.engine.ISpellingRegionSelector;
 
-
 public class RegionSelectors {
+
+  private static final String REGION_SELECTOR_EXTENSION_POINT_ID = "com.github.gspell4eclipse.region.selector";
 
   private static RegionSelectors instance = null;
 
@@ -23,29 +24,27 @@ public class RegionSelectors {
 
   private RegionSelectors() {
 
-    IConfigurationElement extensions[] = Platform.getExtensionRegistry().getConfigurationElementsFor("foo.spelling.region.selector");
-    
+    IConfigurationElement extensions[] = Platform.getExtensionRegistry().getConfigurationElementsFor(REGION_SELECTOR_EXTENSION_POINT_ID);
+
     Object regionSelector = null;
-    
+
     for (int i = 0; i < extensions.length; i++) {
       try {
-        regionSelector = extensions[i].createExecutableExtension("class");        
+        regionSelector = extensions[i].createExecutableExtension("class");
       } catch (CoreException e) {
-        IStatus status = new Status(Status.WARNING, Activator.PLUGIN_ID,
-            Status.OK, "Can't create content type region selector", e);
-        StatusManager.getManager().handle(status, StatusManager.LOG);        
+        IStatus status = new Status(Status.WARNING, Activator.PLUGIN_ID, Status.OK, "Can't create content type region selector", e);
+        StatusManager.getManager().handle(status, StatusManager.LOG);
       }
 
       String type = extensions[i].getAttribute("contentType");
-      
+
       IContentType contentType = Platform.getContentTypeManager().getContentType(type);
-      
-      if(contentType != null) {
+
+      if (contentType != null) {
         selectors.put(contentType, (ISpellingRegionSelector) regionSelector);
-      }
-      else {
+      } else {
         IStatus status = new Status(Status.WARNING, Activator.PLUGIN_ID, "No such content type: " + contentType);
-        StatusManager.getManager().handle(status, StatusManager.LOG);               
+        StatusManager.getManager().handle(status, StatusManager.LOG);
       }
     }
   }
@@ -59,7 +58,7 @@ public class RegionSelectors {
   }
 
   /**
-   * Get a spelling selector for the specified content type.
+   * Get a spelling selector for the specified content type.contentType
    * 
    * @param contentType
    *          The content type.
@@ -71,7 +70,12 @@ public class RegionSelectors {
     if (selectors.containsKey(contentType)) {
       return selectors.get(contentType);
     }
-
-    return getRegionSelector(contentType.getBaseType());
+    
+    if(contentType.getBaseType() != null) {
+      return getRegionSelector(contentType.getBaseType());      
+    }
+    else {
+      return null;
+    }
   }
 }
